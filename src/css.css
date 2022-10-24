@@ -1,0 +1,21 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1604349986032-6faa7b5bb039?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fHdpbnRlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1600&q=60");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.App footer {
+    color: #fff;
+  text-align: center;
+}
+.App .links {
+    color: #CE0501;
+    text-decoration: none;
+}
+.App .container {
+    background: rgb(248, 245, 245, 0.6);
+    margin: 100px auto;
+    max-width: 600px;
+  
+    padding: 20px 30px;
+}
