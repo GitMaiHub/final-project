@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <SearchEngine defaultCity="Lapland" />
+        <SearchEngine defaultCity="Bruges" />
       </div>
       <footer>
         This project is{" "}
