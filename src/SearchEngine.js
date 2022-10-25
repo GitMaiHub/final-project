@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios"; 
 import CurrentWeather from "./CurrentWeather";
+import Forecast from "./Forecast";
 
 export default function SearchEngine(props) {
   const [city, setCity] = useState(props.defaultCity);
@@ -15,9 +16,9 @@ function displayWeather(response) {
     icon: response.data.condition.icon_url,
     temperature: Math.round(response.data.temperature.current),
     description: response.data.condition.description,
-    feel: Math.round(response.data.temperature.feels_like),
     humidity: response.data.temperature.humidity,
-    wind: Math.round(response.data.wind.speed)
+    wind: Math.round(response.data.wind.speed),
+    coordinates: response.data.coordinates
   })
 }
 
@@ -58,6 +59,7 @@ return (
       </div>
     </form>
     <CurrentWeather data={weather} />
+    <Forecast coordinates={weather.coordinates} />
   </div>
 );
 } else {
