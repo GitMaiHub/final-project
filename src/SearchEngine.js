@@ -44,7 +44,7 @@ return (
   <div className="SearchEngine">
     <form onSubmit={handleSubmit}>
       <div className="row">
-        <div className="col-10">
+        <div className="col-sm-10">
           <input
             type="search"
             placeholder="Enter a city..."
@@ -53,18 +53,20 @@ return (
             onChange={updateCity}
           />
         </div>
-        <div className="col-2">
+        <div className="col-sm-2">
           <input type="submit" value="Search" className="btn btn-success" />
         </div>
       </div>
     </form>
     <CurrentWeather data={weather} />
+    <hr />
     <Forecast coordinates={weather.coordinates} />
   </div>
 );
 } else {
   search();
   return "Loading..."
+  
 }
 
    

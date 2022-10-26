@@ -1,21 +1,118 @@
+:root {
+  --accent-color: #CE0501;
+  --box-shadow: 2px 2px 3px 2px rgba(39, 33, 33, 0.3);
+  --font-family: 'Lexend', sans-serif;
+  --support-color: #165831;
+  --text-color: #3C2317;
+}
 body {
   background-image: url("https://images.unsplash.com/photo-1604349986032-6faa7b5bb039?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fHdpbnRlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1600&q=60");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: var(--font-family);
 }
-.App footer {
-    color: #fff;
-  text-align: center;
-}
-.App .links {
-    color: #CE0501;
-    text-decoration: none;
+.App {
+  color: var(--text-color);
 }
 .App .container {
     background: rgb(248, 245, 245, 0.6);
-    margin: 100px auto;
-    max-width: 600px;
-  
-    padding: 20px 30px;
+    margin: 50px auto;
+    max-width: 900px;
+    padding: 30px 40px;
+}
+.App footer {
+  color: var(--support-color);
+margin-top: -40px;
+  text-align: center;
+}
+.App .links {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.SearchEngine form {
+  margin-bottom: 30px;
+  padding: 10px 30px;
+}
+.SearchEngine .form-control {
+   box-shadow: var(--box-shadow);
+   color: var(--support-color);
+ font-size: 18px;
+  padding: 10px 20px;
+}
+.SearchEngine .btn-success {
+ background: var(--support-color);
+ box-shadow: var(--box-shadow);
+  color: var(--accent-color);
+  font-size: 18px;
+  padding: 10px 20px;
+}
+.SearchEngine hr {
+  border: 1.5px dotted var(--support-color);
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.CurrentWeather h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+.CurrentWeather img {
+margin-top: -10px;
+  width: 170px;
+}
+.CurrentWeather h4 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: -40px;
+  text-align: center;
+}
+.CurrentWeather .weather-condition {
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+}
+.TemperatureConversion .temperature {
+  font-size: 96px;
+  font-weight: 800;
+}
+.TemperatureConversion .unit {
+  font-size: 20px;
+  position: relative;
+  top: -50px;
+}
+.TemperatureConversion a {
+  color: var(--accent-color);
+  text-decoration: none;
+
+}
+.FormatDate {
+  margin-top: 20px;
+}
+.FormatDate h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: end;
+}
+.ForecastWeather ul {
+list-style: none;
+padding: 0;
+text-align: center;
+}
+.ForecastWeather li {
+  font-size: 18px;
+}
+.ForecastWeather .min {
+  opacity: 0.7;
+}
+
+@media(max-width: 576px) {
+  body {
+    width: 100%;
+  }
+.App .container {
+  margin: 0 auto;
+}
 }

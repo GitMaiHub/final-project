@@ -15,8 +15,8 @@ function showCelsius(event) {
 if (unit === "celsius") {
  return (
    <div className="TemperatureConversion">
-     <span>{props.celsius}</span>
-     <span>
+     <span className="temperature">{props.celsius}</span>
+     <span className="unit">
        °C |{" "}
        <a href="/" onClick={showFahrenheit}>
          °F
@@ -28,10 +28,10 @@ if (unit === "celsius") {
     let fahrenheit = ((props.celsius) * 9) / 5 + 32;
     return (
         <div className="TemperatureConversion">
-            <span>
+            <span className="temperature">
                 {Math.round(fahrenheit)}
             </span>
-            <span>°F | <a href="/" onClick={showCelsius}>°C</a></span>
+            <span className="unit">°F | <a href="/" onClick={showCelsius}>°C</a></span>
         </div>
     )
 }

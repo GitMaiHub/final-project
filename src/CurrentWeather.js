@@ -15,20 +15,14 @@ return (
         <FormatDate date={props.data.time} />
       </div>
     </div>
+    <div className="d-flex flex-row justify-content-center">
+      <img src={props.data.icon} alt={props.data.description} />
 
-    <div className="row">
-      <div className="col-5">
-        <img src={props.data.icon} alt={props.data.description} />
-      </div>
-      <div className="col-7">
-        <TemperatureConversion celsius={props.data.temperature} />
-      </div>
-      <div className="col-12">
-          <h4>{props.data.description}</h4>
-      </div>
+      <TemperatureConversion celsius={props.data.temperature} />
     </div>
+    <h4>{props.data.description}</h4>
 
-    <div className="row">
+    <div className="row weather-condition">
       <div className="col-6">💧Humidity - {props.data.humidity} %</div>
       <div className="col-6">💨Wind - {props.data.wind} km/h</div>
     </div>

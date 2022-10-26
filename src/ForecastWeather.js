@@ -27,10 +27,11 @@ function day() {
         <li><img
           src={props.data.condition.icon_url}
           alt={props.data.condition.description}
+          size={30}
         /></li>
         <li>{props.data.condition.description}</li>
         <span>{maxTemperature()}°C</span> {" "}
-        <span>{minTemperature()}°C</span>
+        <span className="min">{minTemperature()}°C</span>
         </ul>
       </div>
     );
