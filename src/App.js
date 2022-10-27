@@ -23,7 +23,7 @@ export default function App() {
         </a>{" "}
         and{" "}
         <a
-          href="https://app.netlify.com/sites/unique-praline-6e0127/overview"
+          href="https://inspiring-starburst-0ce5b3.netlify.app/"
           title="View on Netlify"
           target="_blank"
           rel="noreferrer"
