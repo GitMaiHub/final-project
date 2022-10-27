@@ -1,5 +1,6 @@
 :root {
   --accent-color: #CE0501;
+  --background-color: rgb(248, 245, 245, 0.6);
   --box-shadow: 2px 2px 3px 2px rgba(39, 33, 33, 0.3);
   --font-family: 'Lexend', sans-serif;
   --support-color: #165831;
@@ -16,7 +17,7 @@ body {
   color: var(--text-color);
 }
 .App .container {
-    background: rgb(248, 245, 245, 0.6);
+    background: var(--background-color);
     margin: 50px auto;
     max-width: 900px;
     padding: 30px 40px;
@@ -110,9 +111,78 @@ text-align: center;
 
 @media(max-width: 576px) {
   body {
-    width: 100%;
+    background-size: contain;
+    background-repeat: repeat;
+   
   }
 .App .container {
   margin: 0 auto;
+  
+  padding: 20px;
+}
+.App footer {
+
+  line-height: 0.7;
+  margin-top: 10px;
+}
+.SearchEngine form {
+  margin-bottom: 20px;
+  padding: 0;
+}
+.SearchEngine .form-control {
+font-size: 16px;
+
+}
+.SearchEngine .btn-success {
+  font-size: 16px;
+}
+.SearchEngine hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.CurrentWeather h1 {
+  font-size: 30px;
+  text-align: center;
+}
+.CurrentWeather img {
+margin-top: -10px;
+  width: 100px;
+}
+.CurrentWeather h4 {
+  font-size: 18px;
+
+  margin-top: -20px;
+  text-align: center;
+}
+.CurrentWeather .weather-condition {
+  font-size: 16px;
+}
+.TemperatureConversion .temperature {
+  font-size: 60px;
+ 
+}
+.TemperatureConversion .unit {
+  font-size: 16px;
+ 
+  top: -30px;
+}
+.FormatDate {
+  margin-top: 0;
+}
+.FormatDate h3 {
+  font-size: 18px;
+
+  line-height: 0.7;
+  text-align: center;
+}
+
+.ForecastWeather li {
+  font-size: 16px;
+}
+.ForecastWeather img {
+  width: 60px;
+}
+.ForecastWeather .min {
+  opacity: 0.7;
 }
 }
