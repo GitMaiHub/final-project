@@ -24,10 +24,11 @@ function displayWeather(response) {
 
   function handleSubmit(event) {
     event.preventDefault();
+    search();
   }
 
 function updateCity(event) {
-  search();
+
 setCity(event.target.value);
 }
 
